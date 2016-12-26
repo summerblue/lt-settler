@@ -13,4 +13,4 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com
 printf '\n#alias for cnpm\nalias cnpm="npm --registry=https://registry.npm.taobao.org \
   --cache=$HOME/.npm/.cache/cnpm \
   --disturl=https://npm.taobao.org/dist \
-  --userconfig=$HOME/.cnpmrc"' >> ~/.bashrc && source ~/.bashrc
+  --userconfig=$HOME/.cnpmrc"' >> /home/vagrant/.bashrc
