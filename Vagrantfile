@@ -2,7 +2,7 @@ VAGRANTFILE_API_VERSION = '2'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Configure The Box
-  config.vm.box = 'laravel/homestead'
+  config.vm.box = 'lc/homestead'
   config.vm.hostname = 'homestead'
 
   # Don't Replace The Default Key https://github.com/mitchellh/vagrant/pull/4707

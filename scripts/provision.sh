@@ -14,9 +14,7 @@ EOF
 # Caching up Laravel with composer
 sudo su vagrant <<'EOF'
 cd ~
-/usr/local/bin/composer create-project laravel/laravel cached --prefer-dist "5.1.*"
-/usr/local/bin/composer create-project laravel/laravel cached --prefer-dist "5.3.*"
-/usr/local/bin/composer create-project laravel/laravel cached --prefer-dist "5.4.*"
+/usr/local/bin/composer create-project laravel/laravel cached --prefer-dist "5.5.*"
 composer create-project laravel/laravel Laravel dev-develop
 EOF
 

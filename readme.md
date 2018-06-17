@@ -1,22 +1,14 @@
 # Laravel Tutorial Settler
 
-在 `laravel/homestead` 的基础上，增加了：
+在 `lc/homestead` 的基础上，增加了：
 
 - 默认安装 heroku
 - 国内 composer 加速
 - cnpm 国内 npm 加速
 
-## 系统要求
+## 教程
 
-你需要先安装 `laravel/homestead` 盒子，对应版本 3.0.0。
-
-```
-> vagrant box list
-laravel/homestead (virtualbox, 3.0.0)
-```
-
-## 运行
-
-```
-./build.sh
-```
+1. 下载并导入最新的 box，导入时注意修改 provider 为 `lc/homestead`  https://laravel-china.org/topics/2090 ；
+2. 检查 `vagrant box list` 是否有 `lc/homestead`;
+3. 检查 `provision.sh` 确定无误；
+4. 运行 `./build.sh` 生成定制的 box。
