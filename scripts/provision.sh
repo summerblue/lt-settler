@@ -12,46 +12,8 @@ sudo su vagrant <<'EOF'
 EOF
 
 # NPM 加速
-printf '\n#alias for cnpm\nalias cnpm="npm --registry=https://registry.npm.taobao.org \
-  --cache=$HOME/.npm/.cache/cnpm \
-  --disturl=https://npm.taobao.org/dist \
-  --userconfig=$HOME/.cnpmrc"' >> /home/vagrant/.bashrc
-
-# 自动配置好所有项目
 sudo su vagrant <<'EOF'
-mkdir -p ~/LaravelChina
-cd ~/LaravelChina
-git clone https://github.com/summerblue/laravel-tutorial.git l01
-cd l01
-cp .env.example .env
-composer install
-SASS_BINARY_SITE=http://npm.taobao.org/mirrors/node-sass yarn install --no-bin-links
-cd ~/LaravelChina
-git clone https://github.com/summerblue/larabbs.git l02
-cd l02
-cp .env.example .env
-composer install
-SASS_BINARY_SITE=http://npm.taobao.org/mirrors/node-sass yarn install --no-bin-links
-cd ~/LaravelChina
-git clone https://github.com/summerblue/larabbs.git l03
-cd l03
-git checkout api
-cp .env.example .env
-composer install
-SASS_BINARY_SITE=http://npm.taobao.org/mirrors/node-sass yarn install --no-bin-links
-cd ~/LaravelChina
-git clone https://github.com/summerblue/larabbs.git l04
-cd l04
-git checkout weapp
-cp .env.example .env
-composer install
-SASS_BINARY_SITE=http://npm.taobao.org/mirrors/node-sass yarn install --no-bin-links
-cd ~/LaravelChina
-git clone https://github.com/summerblue/laravel-shop.git l05
-cd l05
-cp .env.example .env
-composer install
-SASS_BINARY_SITE=http://npm.taobao.org/mirrors/node-sass yarn install --no-bin-links
+/usr/bin/npm config set registry=https://registry.npm.taobao.org
 EOF
 
 # 安装 Elasticsearch

@@ -1,13 +1,13 @@
 {
-    "name": "laravel/homestead",
+    "name": "lc/homestead",
     "versions":
     [
         {
-            "version": "3.0.0",
+            "version": "6.4.1",
             "providers": [
                 {
                   "name": "virtualbox",
-                  "url": "homestead-virtualbox-3.0.0.box"
+                  "url": "virtualbox.box"
                 }
             ]
         }
