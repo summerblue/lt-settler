@@ -1,13 +1,12 @@
 {
     "name": "lc/homestead",
-    "versions":
-    [
+    "versions": [
         {
-            "version": "8.2.1",
+            "version": "11.0.0",
             "providers": [
                 {
-                  "name": "virtualbox",
-                  "url": "virtualbox.box"
+                    "name": "virtualbox",
+                    "url": "virtualbox.box"
                 }
             ]
         }

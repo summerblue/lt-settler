@@ -22,9 +22,10 @@ EOF
 # 安装 Elasticsearch
 sudo su vagrant <<'EOF'
 cd ~
-git clone https://github.com/summerblue/laravel-ubuntu-init.git
+git config --global --unset https.proxy
+git clone https://github.com/summerblue/laravel-ubuntu-init
 cd laravel-ubuntu-init/16.04/
 sudo ./install_elasticsearch.sh 7
-systemctl disable elasticsearch.service
+sudo systemctl disable elasticsearch.service
 EOF
 
